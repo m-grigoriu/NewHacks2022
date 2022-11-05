@@ -54,7 +54,11 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
+<<<<<<< HEAD
                 android:id="@+id/editDistance"
+=======
+                android:id="@+id/editTextTextPersonName"
+>>>>>>> origin/master
                 android:layout_width="103dp"
                 android:layout_height="102dp"
                 android:ems="10"
@@ -78,10 +82,17 @@
                 android:scaleX="2"
                 android:scaleY="2"
                 android:scrollbarSize="10dp"
+<<<<<<< HEAD
                 app:layout_constraintBottom_toBottomOf="@+id/editDistance"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.489"
                 app:layout_constraintStart_toEndOf="@+id/editDistance"
+=======
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+>>>>>>> origin/master
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
                 app:layout_constraintVertical_bias="1.0" />
 
@@ -105,7 +116,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.489"
                 app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
                 app:layout_constraintTop_toBottomOf="@+id/editDistance"
+=======
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+>>>>>>> origin/master
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -124,7 +139,11 @@
                 app:layout_constraintVertical_bias="0.112" />
 
             <EditText
+<<<<<<< HEAD
                 android:id="@+id/editCalories"
+=======
+                android:id="@+id/editTextTextPersonName2"
+>>>>>>> origin/master
                 android:layout_width="100dp"
                 android:layout_height="102dp"
                 android:ems="10"
@@ -134,7 +153,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/units"
                 app:layout_constraintHorizontal_bias="0.0"
+<<<<<<< HEAD
                 app:layout_constraintStart_toStartOf="@+id/editDistance"
+=======
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+>>>>>>> origin/master
                 app:layout_constraintTop_toBottomOf="@+id/textView4"
                 app:layout_constraintVertical_bias="0.0" />
 
@@ -146,11 +169,19 @@
                 android:text="calories"
                 android:textColor="#000000"
                 android:textSize="34sp"
+<<<<<<< HEAD
                 app:layout_constraintBottom_toBottomOf="@+id/editCalories"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.024"
                 app:layout_constraintStart_toEndOf="@+id/editCalories"
                 app:layout_constraintTop_toTopOf="@+id/editCalories"
+=======
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+>>>>>>> origin/master
                 app:layout_constraintVertical_bias="0.491" />
 
             <Button
@@ -162,7 +193,11 @@
                 android:fitsSystemWindows="true"
                 android:fontFamily="sans-serif-medium"
                 android:foregroundTint="#FF9800"
+<<<<<<< HEAD
                 android:onClick="caloriesRoute"
+=======
+                android:onClick="distanceRoute"
+>>>>>>> origin/master
                 android:text="Find me a route"
                 android:textAlignment="textEnd"
                 android:textColor="#FFFFFF"
@@ -171,7 +206,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
                 app:layout_constraintTop_toBottomOf="@+id/editCalories" />
+=======
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+>>>>>>> origin/master
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
