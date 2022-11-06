@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         EditText distanceEdit = findViewById(R.id.editDistance);
         distance = Double.valueOf(String.valueOf(distanceEdit.getText()));
         Intent intent = new Intent(this, route.class);
-        if (type.equals("kilometers")){
-            distance = distance / 1.609;
+        if (type.equals("miles")){
+            distance = distance * 1.609;
         }
         intent.putExtra(Intent.EXTRA_LOCAL_ONLY, String.valueOf(distance));
         startActivityForResult(intent, 5);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         EditText distanceEdit = findViewById(R.id.editCalories);
         distance = Double.valueOf(String.valueOf(distanceEdit.getText()));
         Intent intent = new Intent(this, route.class);
-        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, String.valueOf(distance/100));
+        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, String.valueOf(distance/100*1.609));
         startActivityForResult(intent, 5);
     }
 

@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.*;
@@ -23,16 +22,16 @@ public class route extends AppCompatActivity {
         setContentView(R.layout.activity_route);
 
         Intent intent = getIntent();
-        String mileString = intent.getStringExtra(Intent.EXTRA_LOCAL_ONLY);
-        double mile = Double.parseDouble(mileString);
+        String kiloString = intent.getStringExtra(Intent.EXTRA_LOCAL_ONLY);
+        double kilom = Double.parseDouble(kiloString);
 
         try {
-            Process p = Runtime.getRuntime().exec("python yourapp.py");
-            OutputStream stdin = p.getOutputStream(); // <- Eh?
+            Process p = Runtime.getRuntime().exec("cmd /c python " +  "master.py" + " " + String.valueOf(kilom));
+            OutputStream stream = p.getOutputStream(); // <- weird?
 
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(stdin));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(stream));
 
-            writer.write(String.valueOf(mile));
+            writer.write(String.valueOf(kilom));
             writer.flush();
             writer.close();
 
@@ -41,6 +40,6 @@ public class route extends AppCompatActivity {
         }
 
         ImageView imageView = findViewById(R.id.imageMap);
-        imageView.setImageResource(R.drawable.images);
+        imageView.setImageResource(R.drawable.results);
     }
 }
