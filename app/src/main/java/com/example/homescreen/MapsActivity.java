@@ -22,9 +22,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent = getIntent();
-        String mileString = intent.getStringExtra(Intent.EXTRA_LOCAL_ONLY);
-        int mile = Integer.parseInt(mileString);
+        /*
+
+         */
+
 
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
