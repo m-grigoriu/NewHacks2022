@@ -26,7 +26,7 @@ public class route extends AppCompatActivity {
         double kilom = Double.parseDouble(kiloString);
 
         try {
-            Process p = Runtime.getRuntime().exec("cmd /c python " +  "master.py" + " " + String.valueOf(kilom));
+            Process p = Runtime.getRuntime().exec("cmd /c python " +  "C:\\Users\\zeele\\AndroidStudioProjects\\Stuff\\master.py" + " " + String.valueOf(kilom));
             OutputStream stream = p.getOutputStream(); // <- weird?
 
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(stream));
@@ -40,6 +40,6 @@ public class route extends AppCompatActivity {
         }
 
         ImageView imageView = findViewById(R.id.imageMap);
-        imageView.setImageResource(R.drawable.results);
+        imageView.setImageResource(R.drawable.images);
     }
 }
